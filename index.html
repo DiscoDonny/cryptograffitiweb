@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
     if (addr[0] === '@') {
       let tx = addr.slice(1)
       run({
-        "v": 2,
+        "v": 3,
         "q": { "find": { "tx.h": tx } }
       })
     } else {
       run({
-        "v": 2,
+        "v": 3,
         "q": { "find": { "in.e.a": addr } }
       })
     }
